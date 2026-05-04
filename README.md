@@ -62,13 +62,11 @@ The public CANTAB dataset is stored in:
 
 ## Notebooks
 
-| Notebook | Description |
-|---|---|
-| `01_sleep_edf_exploration.ipynb` | Explore sleep EDF data and inspect signal structure |
-| `02_sleep_edf_build_dataset.ipynb` | Build a structured dataset from sleep EDF data |
-| `03_sleep_edf_feature_engineering.ipynb` | Generate sleep-related features for analysis |
-| `04_mmash_sleep_mental_health.ipynb` | Analyze sleep features in relation to mental health indicators |
-| `05_sleep_deprivation_cognition.ipynb` | Analyze sleep deprivation and cognitive performance outcomes |
+- `01_sleep_edf_exploration.ipynb` — explore sleep EDF data and inspect signal structure.
+- `02_sleep_edf_build_dataset.ipynb` — build a structured dataset from sleep EDF data.
+- `03_sleep_edf_feature_engineering.ipynb` — generate sleep-related features for analysis.
+- `04_mmash_sleep_mental_health.ipynb` — analyze sleep features in relation to mental health indicators.
+- `05_sleep_deprivation_cognition.ipynb` — analyze sleep deprivation and cognitive performance outcomes.
 
 ## Results
 
@@ -122,3 +120,4 @@ This is a learning-oriented data analysis project. It is not a clinical diagnost
 ## License
 
 This project is licensed under the MIT License.
+

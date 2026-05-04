@@ -26,12 +26,12 @@ This project explores how sleep-related features can be extracted, analyzed, and
 - `notebooks/03_sleep_edf_feature_engineering.ipynb` — feature engineering for sleep analysis.
 - `notebooks/04_mmash_sleep_mental_health.ipynb` — MMASH-based sleep and mental health analysis.
 - `notebooks/05_sleep_deprivation_cognition.ipynb` — sleep deprivation and cognitive performance analysis.
-- `data/raw/` — raw data checksums and local raw data location.
+- `data/raw/` — local raw data location.
 - `data/processed/` — processed CSV datasets used by the notebooks.
 - `data/external/` — external public datasets.
 - `scripts/` — helper scripts.
 - `requirements.txt` — Python dependencies.
-- `LICENSE` — project license.
+- `LICENSE` — MIT license.
 
 ## Data
 
@@ -72,10 +72,10 @@ The public CANTAB dataset is stored in:
 
 The project demonstrates an end-to-end sleep analytics workflow:
 
-- raw and processed sleep-related datasets are organized;
-- sleep features are extracted and prepared for analysis;
-- mental health and cognition-related variables are explored;
-- processed datasets are prepared for modeling and interpretation.
+- Raw and processed sleep-related datasets are organized.
+- Sleep features are extracted and prepared for analysis.
+- Mental health and cognition-related variables are explored.
+- Processed datasets are prepared for modeling and interpretation.
 
 ## Tech Stack
 
@@ -120,4 +120,3 @@ This is a learning-oriented data analysis project. It is not a clinical diagnost
 ## License
 
 This project is licensed under the MIT License.
-

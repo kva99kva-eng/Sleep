@@ -1,2 +1,0 @@
-subject_id,recording_hours,sleep_period_hours,total_sleep_hours,sleep_latency_min,rem_latency_min,fragmentation,wake_pct_in_sleep_period,rem_pct_of_tst,n1_pct_of_tst,n2_pct_of_tst,deep_sleep_pct_of_tst,sleep_efficiency
-hypno_df,22.083333333333332,6.008333333333334,5.441666666666666,510.5,89.0,151,9.43134535367545,19.142419601837673,8.88208269525268,38.28483920367535,33.6906584992343,0.9056865464632455

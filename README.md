@@ -21,17 +21,17 @@ This project explores how sleep-related features can be extracted, analyzed, and
 
 ## Project Structure
 
-- `notebooks/01_sleep_edf_exploration.ipynb` ? initial EDF sleep data exploration.
-- `notebooks/02_sleep_edf_build_dataset.ipynb` ? building a structured dataset from sleep EDF data.
-- `notebooks/03_sleep_edf_feature_engineering.ipynb` ? feature engineering for sleep analysis.
-- `notebooks/04_mmash_sleep_mental_health.ipynb` ? MMASH-based sleep and mental health analysis.
-- `notebooks/05_sleep_deprivation_cognition.ipynb` ? sleep deprivation and cognitive performance analysis.
-- `data/raw/` ? local raw data location.
-- `data/processed/` ? processed CSV datasets used by the notebooks.
-- `data/external/` ? external public datasets.
-- `scripts/` ? helper scripts.
-- `requirements.txt` ? Python dependencies.
-- `LICENSE` ? MIT license.
+- `notebooks/01_sleep_edf_exploration.ipynb` - initial EDF sleep data exploration.
+- `notebooks/02_sleep_edf_build_dataset.ipynb` - building a structured dataset from sleep EDF data.
+- `notebooks/03_sleep_edf_feature_engineering.ipynb` - feature engineering for sleep analysis.
+- `notebooks/04_mmash_sleep_mental_health.ipynb` - MMASH-based sleep and mental health analysis.
+- `notebooks/05_sleep_deprivation_cognition.ipynb` - sleep deprivation and cognitive performance analysis.
+- `data/raw/` - local raw data location.
+- `data/processed/` - processed CSV datasets used by the notebooks.
+- `data/external/` - external public datasets.
+- `scripts/` - helper scripts.
+- `requirements.txt` - Python dependencies.
+- `LICENSE` - MIT license.
 
 ## Data
 
@@ -62,11 +62,11 @@ The public CANTAB dataset is stored in:
 
 ## Notebooks
 
-- `01_sleep_edf_exploration.ipynb` ? explore sleep EDF data and inspect signal structure.
-- `02_sleep_edf_build_dataset.ipynb` ? build a structured dataset from sleep EDF data.
-- `03_sleep_edf_feature_engineering.ipynb` ? generate sleep-related features for analysis.
-- `04_mmash_sleep_mental_health.ipynb` ? analyze sleep features in relation to mental health indicators.
-- `05_sleep_deprivation_cognition.ipynb` ? analyze sleep deprivation and cognitive performance outcomes.
+- `01_sleep_edf_exploration.ipynb` - explore sleep EDF data and inspect signal structure.
+- `02_sleep_edf_build_dataset.ipynb` - build a structured dataset from sleep EDF data.
+- `03_sleep_edf_feature_engineering.ipynb` - generate sleep-related features for analysis.
+- `04_mmash_sleep_mental_health.ipynb` - analyze sleep features in relation to mental health indicators.
+- `05_sleep_deprivation_cognition.ipynb` - analyze sleep deprivation and cognitive performance outcomes.
 
 ## Results
 

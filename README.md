@@ -1,145 +1,124 @@
-# Sleep Neuroscience Project
+﻿# SleepMind AI
 
-Exploratory modeling of sleep, stress/anxiety, and cognitive performance using open datasets.
+SleepMind AI is a data analysis project focused on sleep patterns, sleep deprivation, cognitive performance, and mental health indicators.
 
-## Project overview
+The project combines several sleep-related datasets and demonstrates a full analytical workflow: data exploration, feature engineering, statistical analysis, and interpretable machine learning.
 
-This project explores how sleep-related metrics are associated with mental-health-related questionnaire outcomes and cognitive performance.
+## Problem Statement
 
-The repository contains three main case studies:
+Sleep quality and sleep deprivation can affect cognitive performance, emotional state, and general well-being.
 
-1. **Sleep architecture analytics with Sleep-EDF**
-   - hypnogram analysis
-   - sleep feature engineering
-   - sleep quality profiling
+This project explores how sleep-related features can be extracted, analyzed, and connected with mental health and cognitive outcomes.
 
-2. **Sleep and psychological outcomes with MMASH**
-   - participant-level sleep metrics
-   - questionnaire-based stress/anxiety outcomes
-   - exploratory prediction of stress- and anxiety-related measures
+## Objectives
 
-3. **Sleep deprivation and cognition**
-   - before-vs-after comparison under 24-hour sleep deprivation
-   - cognitive performance analysis using CANTAB-derived metrics
-   - paired within-subject testing and condition classification
+- Explore sleep EEG / EDF data.
+- Build sleep-stage and sleep-feature datasets.
+- Engineer features from sleep-related signals and summaries.
+- Analyze the relationship between sleep and mental health indicators.
+- Study the impact of sleep deprivation on cognitive performance.
+- Prepare clean datasets and visual results for portfolio presentation.
 
-## Datasets
+## Project Structure
 
-### 1. Sleep-EDF Expanded
-Used for PSG-based sleep stage exploration and feature engineering.
+- `notebooks/01_sleep_edf_exploration.ipynb` — initial EDF sleep data exploration.
+- `notebooks/02_sleep_edf_build_dataset.ipynb` — building a structured dataset from sleep EDF data.
+- `notebooks/03_sleep_edf_feature_engineering.ipynb` — feature engineering for sleep analysis.
+- `notebooks/04_mmash_sleep_mental_health.ipynb` — MMASH-based sleep and mental health analysis.
+- `notebooks/05_sleep_deprivation_cognition.ipynb` — sleep deprivation and cognitive performance analysis.
+- `data/raw/` — raw data checksums and local raw data location.
+- `data/processed/` — processed CSV datasets used by the notebooks.
+- `data/external/` — external public datasets.
+- `scripts/` — helper scripts.
+- `requirements.txt` — Python dependencies.
+- `LICENSE` — project license.
 
-### 2. MMASH
-Used for exploratory modeling of associations between sleep quality metrics and stress/anxiety-related questionnaire outcomes.
+## Data
 
-### 3. Sleep deprivation and cognitive performance dataset
-Used to study cognitive changes before and after 24 hours of sleep deprivation.
+Large raw data archives are not included in the repository.
 
-## Repository structure
+The MMASH archive is ignored by Git. To reproduce the full workflow locally, place the archive here:
 
-```text
-sleep-neuroscience-project/
-├── README.md
-├── requirements.txt
-├── notebooks/
-│   ├── 01_sleep_edf_exploration.ipynb
-│   ├── 02_sleep_edf_feature_engineering.ipynb
-│   ├── 02_5_sleep_edf_build_dataset.ipynb
-│   ├── 03_mmash_sleep_mental_health.ipynb
-│   └── 04_sleep_deprivation_cognition.ipynb
-├── data/
-│   ├── raw/
-│   │   ├── sleep_edf/
-│   │   ├── mmash/
-│   │   └── sleep_deprivation/
-│   └── processed/
-├── figures/
-└── outputs/
+`data/raw/MMASH.zip`
 
-Notebooks
-01_sleep_edf_exploration.ipynb
+Processed CSV files used in the analysis are stored in:
 
-Exploratory analysis of Sleep-EDF hypnograms and sleep-stage distributions.
+`data/processed/`
 
-02_sleep_edf_feature_engineering.ipynb
+The public CANTAB dataset is stored in:
 
-Extraction of subject-level sleep features such as:
+`data/external/`
 
-sleep duration
-sleep latency
-REM latency
-fragmentation
-sleep efficiency
-stage proportions
-02_5_sleep_edf_build_dataset.ipynb
+## Methods
 
-Batch conversion of multiple hypnogram files into a participant-level feature table.
+- Exploratory data analysis
+- Sleep-stage data processing
+- Feature engineering
+- Group comparison
+- Correlation analysis
+- Statistical testing
+- Machine learning dataset preparation
+- Visualization of sleep and cognition-related patterns
 
-03_mmash_sleep_mental_health.ipynb
+## Notebooks
 
-Exploratory modeling of associations between sleep quality metrics and stress/anxiety-related questionnaire outcomes in MMASH.
+| Notebook | Description |
+|---|---|
+| `01_sleep_edf_exploration.ipynb` | Explore sleep EDF data and inspect signal structure |
+| `02_sleep_edf_build_dataset.ipynb` | Build a structured dataset from sleep EDF data |
+| `03_sleep_edf_feature_engineering.ipynb` | Generate sleep-related features for analysis |
+| `04_mmash_sleep_mental_health.ipynb` | Analyze sleep features in relation to mental health indicators |
+| `05_sleep_deprivation_cognition.ipynb` | Analyze sleep deprivation and cognitive performance outcomes |
 
-Main outcomes explored:
+## Results
 
-Daily_stress
-STAI1
-Pittsburgh
-04_sleep_deprivation_cognition.ipynb
+The project demonstrates an end-to-end sleep analytics workflow:
 
-Analysis of cognitive performance before and after 24-hour sleep deprivation.
+- raw and processed sleep-related datasets are organized;
+- sleep features are extracted and prepared for analysis;
+- mental health and cognition-related variables are explored;
+- processed datasets are prepared for modeling and interpretation.
 
-Main tasks:
+## Tech Stack
 
-classification of baseline vs sleep-deprived sessions
-paired before-vs-after testing
-identification of cognitive metrics most affected by sleep deprivation
-Main findings
-Sleep-EDF
-Built a full preprocessing and feature-engineering pipeline from hypnogram-level sleep staging data.
-Generated subject-level sleep features and visualization outputs such as hypnograms and radar charts.
-MMASH
-Sleep fragmentation metrics showed the strongest exploratory associations with questionnaire-based stress outcomes.
-STAI1 showed the most promising predictive signal among the tested questionnaire targets.
-Predictive performance remained limited, highlighting the constraints of small-sample wearable datasets.
-Sleep deprivation and cognition
-The strongest exploratory changes appeared in RVP- and RTI-related cognitive metrics after 24 hours of sleep deprivation.
-Paired within-subject analysis suggested directional changes in sustained attention and reaction-time-related measures.
-No metric remained significant after multiple-comparison correction, which is consistent with the small sample size.
-Methods
-Python
-pandas
-numpy
-matplotlib
-scikit-learn
-scipy
-statsmodels
-mne
-Limitations
-Small sample sizes in the open datasets
-Exploratory rather than clinical-grade modeling
-Heterogeneous datasets with different study designs and outcome types
-Next steps
-add more signal-derived physiological features
-include feature importance and explainability
-compare multiple open sleep-related datasets
-improve packaging with a dashboard or report-style figures
-How to run
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- SciPy
+- scikit-learn
+- Jupyter Notebook
+
+## How to Run
+
+Clone the repository:
+
+`git clone https://github.com/kva99kva-eng/Sleep.git`
+
+Go to the project folder:
+
+`cd Sleep`
+
+Create and activate a virtual environment:
+
+`python -m venv .venv`
+
+`.venv\Scripts\activate`
 
 Install dependencies:
 
-pip install -r requirements.txt
-Open the notebooks in order:
-01_sleep_edf_exploration.ipynb
-02_sleep_edf_feature_engineering.ipynb
-02_5_sleep_edf_build_dataset.ipynb
-03_mmash_sleep_mental_health.ipynb
-04_sleep_deprivation_cognition.ipynb
-Project positioning
+`pip install -r requirements.txt`
 
-This repository is best interpreted as an open-data exploratory sleep analytics portfolio project, not as a clinical decision-making system.
+Run Jupyter Lab:
 
-It focuses on:
+`jupyter lab`
 
-reproducible preprocessing
-interpretable feature engineering
-exploratory modeling
-careful interpretation of small-sample results
+Then run the notebooks in order from `01` to `05`.
+
+## Limitations
+
+This is a learning-oriented data analysis project. It is not a clinical diagnostic tool and should not be used for medical decision-making.
+
+## License
+
+This project is licensed under the MIT License.

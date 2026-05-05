@@ -88,8 +88,6 @@ The project demonstrates an end-to-end sleep analytics workflow:
 - statsmodels
 - MNE
 - Jupyter Notebook
-- statsmodels
-- MNE
 
 ## How to Run 
 

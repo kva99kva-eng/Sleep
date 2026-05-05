@@ -89,15 +89,11 @@ The project demonstrates an end-to-end sleep analytics workflow:
 - MNE
 - Jupyter Notebook
 
-## How to Run
+## How to Run 
 
 Clone the repository:
 
-```bash
 git clone https://github.com/kva99kva-eng/Sleep.git
-
-
-
 
 Go to the project folder:
 
@@ -106,6 +102,7 @@ cd Sleep
 Create and activate a virtual environment:
 
 python -m venv .venv
+
 .venv\Scripts\activate
 
 Install dependencies:
@@ -118,11 +115,12 @@ jupyter lab
 
 Then run the notebooks in order from 01 to 05.
 
-Limitations
+## Limitations
 
 This is a learning-oriented data analysis project. It is not a clinical diagnostic tool and should not be used for medical decision-making.
 
-License
+## License
 
 This project is licensed under the MIT License.
+
 

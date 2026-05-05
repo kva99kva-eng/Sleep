@@ -77,6 +77,24 @@ The project demonstrates an end-to-end sleep analytics workflow:
 - Mental health and cognition-related variables are explored.
 - Processed datasets are prepared for modeling and interpretation.
 
+## Visual Results
+
+### Sleep Quality Profile
+
+![Sleep quality radar chart](notebooks/images/sleep_quality_radar.png)
+
+### MMASH Sleep and Stress Analysis
+
+![MMASH sleep and stress analysis](notebooks/images/mmash_sleep_stress_analysis.png)
+
+### Sleep Deprivation and Cognition
+
+![Sleep deprivation and cognition results](notebooks/images/sleep_deprivation_cognition_results.png)
+
+### Sleep Deprivation Feature Importance
+
+![Sleep deprivation feature importance](notebooks/images/sleep_deprivation_feature_importance.png)
+
 ## Tech Stack
 
 - Python

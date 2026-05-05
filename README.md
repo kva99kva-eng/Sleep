@@ -137,6 +137,13 @@ Then run the notebooks in order from 01 to 05.
 
 This is a learning-oriented data analysis project. It is not a clinical diagnostic tool and should not be used for medical decision-making.
 
+## Future Work
+
+- Add a separate MMASH raw preprocessing pipeline.
+- Move raw MMASH parsing logic into `scripts/prepare_mmash_dataset.py`.
+- Improve reproducibility for generating `data/processed/mmash_modeling_dataset.csv` from the original MMASH archive.
+- Add more visual summaries for sleep, stress and cognition-related variables.
+
 ## License
 
 This project is licensed under the MIT License.

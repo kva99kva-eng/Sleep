@@ -1,2 +1,2 @@
-subject_id,file_name,status,n_rows,message
-hypno_df,hypno_df.csv,success,153,
+input_file,output_file,n_input_rows,n_clean_rows,status
+hypno_df.csv,sleep_features_all_subjects.csv,153,153,success

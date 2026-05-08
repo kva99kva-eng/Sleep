@@ -1,7 +1,7 @@
 # Sleep, Mental Health and Cognition Analysis
 
 Author: Victoria Kupina
-Role: Data Analyst / Junior Data Scientist
+Role: Data Analyst 
 
 ## Problem Statement
 
